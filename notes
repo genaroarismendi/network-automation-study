@@ -6,9 +6,9 @@ cp [_file1_] [_file2_]
 
 git clone [_https://url.git_] [_folder_]
 
-#### connect to netbox on gcp
+#### connect to netbox
 
-ssh root@35.193.147.33
+ssh g@10.242.210.104
 
 #### activate venv:
 
@@ -40,6 +40,11 @@ ZQ	Quit without checking changes
 #### initialize git
 
 git init .
+
+#### identify myself
+
+  git config --global user.email "genaroarismendi@icloud.com"
+  git config --global user.name "g"
 
 #### check git status
 
