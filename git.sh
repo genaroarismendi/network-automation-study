@@ -1,3 +1,11 @@
+#### git personal access token (expires on 9 sep 2025)
+
+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
+
+#### get help for git [_command_]
+
+git help [_command_]
+
 #### clone remote repository [_https://url.git_] to working directory [_folder_]
 
 git clone [_https://url.git_] [_folder_]
@@ -8,16 +16,16 @@ git init .
 
 #### identify myself
 
-git config --global user.email "genaroarismendi@icloud.com"
-git config --global user.name "g"
+git config --global user.email "genaroarismendi@gmail.com"
+git config --global user.name "g-on-ubuntu"
 
 #### check git status
 
 git status
 
-#### stage/track file
+#### stage/track [_file_]
 
-git add database.py
+git add [_file_]
 
 #### stage/track all files in folder
 
@@ -25,7 +33,15 @@ git add .
 
 #### discard changes in working directory
 
-git restore -- start.py
+git restore -- [_file_]
+
+#### check log of commits
+
+git log
+
+#### roll back file to a previous version with [_hash(first 7 digits)_] found using git log
+
+git reset [_hash(first 7 digits)_]
 
 #### discard changes in staging directory
 
@@ -33,23 +49,29 @@ git reset HEAD
 
 #### commit changes to .git repository
 
-git commit -am "[NEW_FILENAME]"
+git commit -am "[_comments_]"
 
-#### discard changes in .git repository
+#### discard changes in working directory
 
-git reset [first 7 characters in sha1 commit id]
+git checkout -- . # all files 
+
+git checkout -- [_file_] # just [_file_]
 
 #### branching to a new wd called [_NEWBRANCH_]
 
 git checkout -b [_NEWBRANCH_]
 
-#### visualize branches
+#### visualize branches: git log in a concise way, showing branches, commit ids, commit messages and HEAD location
 
 git log --all --decorate --oneline --graph
 
 #### create shortcut for "log --all --decorate --oneline --graph" as "hist"
 
 git config --global alias.hist "log --all --decorate --oneline --graph"
+
+#### use shortcut for "log --all --decorate --oneline --graph" as "hist"
+
+git hist
 
 #### check on which branch we're working
 
@@ -79,9 +101,9 @@ git diff
 
 diff -u database.py database2.py
 
-#### push changes from local repository to remote repository
+#### pushes the updated main branch to GitHub
 
-git push [-u _MAIN_REPO_ _BRANCH_REPO_]
+git push origin main
 
 #### merge (pull) remote repository changes to working directory
 
