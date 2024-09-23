@@ -1,7 +1,3 @@
-#### git personal access token (expires on 9 sep 2025)
-
-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
-
 #### get help for git [_command_]
 
 git help [_command_]
@@ -107,7 +103,7 @@ git push origin main
 
 #### merge (pull) remote repository changes to working directory
 
-git pull 
+git pull origin main
 
 #### merge (fetch) remote repository changes [_https://url.git_] to local repository [_folder_]
 
