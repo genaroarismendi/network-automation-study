@@ -85,9 +85,9 @@ tail [_FILE_]
 
 git checkout [_MASTER_]
 
-#### once the changes has been commited or discarded, the experimental branch can be deleted
+#### once the changes has been commited or discarded, the [_experimental-branch_] can be deleted
 
-git branch -d dollars
+git branch -d [_experimental-branch_]
 
 #### display differences between original and staged file
 
@@ -134,3 +134,35 @@ cat ~/.ssh/id_rsa.pub
 incase you hadnt specified a different path then this will be the default path
 
 Add this key to your github account
+
+#### suggestion from chatgpt:
+
+######## Organize Your Work in Branches
+
+############ on macosx 
+
+1) Create branch: for every new concept or task you work on, create a new branch. This approach helps you focus on one thing at a time and keeps your main branch clean.
+
+git checkout -b testing/branch-for-git-sh
+
+2) After completing the task, you can merge this branch back into the main branch:
+
+git checkout main
+git merge testing/branch-for-git-sh
+git branch -d testing/branch-for-git-sh  # Deletes the branch locally
+git push origin --delete testing/branch-for-git-sh  # Deletes the branch on GitHub
+git push origin main  # Pushes the updated main branch to GitHub
+
+############ on ubuntu 
+
+1) Create branch: for every new concept or task you work on, create a new branch. This approach helps you focus on one thing at a time and keeps your main branch clean.
+
+git checkout -b testing/branch-for-notes
+
+2) After completing the task, you can merge this branch back into the main branch:
+
+git checkout main
+git merge testing/branch-for-notes
+git branch -d testing/branch-for-notes  # Deletes the branch locally
+git push origin --delete testing/branch-for-notes  # Deletes the branch on GitHub
+git push origin main  # Pushes the updated main branch to GitHub
