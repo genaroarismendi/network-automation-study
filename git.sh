@@ -105,6 +105,8 @@ git push origin main
 
 git pull origin main
 
+git pull origin main -p # in case you want to prune remote-tracking branches no longer on remote
+
 #### merge (fetch) remote repository changes [_https://url.git_] to local repository [_folder_]
 
 git fetch [_https://url.git_]
