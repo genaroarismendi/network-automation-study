@@ -6,6 +6,7 @@ working directory: /Users/g/Documents/learning/tech/communications/networking/au
 
 working directory: /home/g/Documents/learning/networking/automation/projects/network-automation-study
 
+#### testing git here 
 
 git eres una rata
 
@@ -34,3 +35,12 @@ deactivate
 #### get to m2 folder: 
 
 cd /home/genaroarismendi/nickrusso/devasc1/m6
+
+#### listing pip packages installed
+
+pip list
+
+#### show properties for an application (including dependencies)
+
+pip show [app_name]
+
